@@ -34,13 +34,13 @@ function submitData(event) {
 
         dataMyProjects.push(project);
         console.log("dataMyProjects", dataMyProjects);
-        renderBlog(dataMyProjects); 
+        renderProject(dataMyProjects); 
     };
 
     reader.readAsDataURL(uploadedImage);  // Baca file gambar sebagai data URL
 }
 
-function renderBlog(data) {
+function renderProject(data) {
     const myProjectSection = document.getElementById("myProjectSection");
 
     myProjectSection.innerHTML = "";
