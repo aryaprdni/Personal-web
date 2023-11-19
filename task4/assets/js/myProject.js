@@ -33,7 +33,6 @@ function submitData(event) {
         };
 
         dataMyProjects.push(project);
-        console.log("dataMyProjects", dataMyProjects);
         renderProject(dataMyProjects); 
     };
 
