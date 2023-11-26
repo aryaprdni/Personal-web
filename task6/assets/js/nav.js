@@ -1,5 +1,5 @@
 function toggleHamburger() {
-    var navContainer = document.getElementById("hamburger-nav-container");
+    const navContainer = document.getElementById("hamburger-nav-container");
 
     if (navContainer.style.display === "none" || navContainer.style.display === "") {
         // Jika elemen sedang disembunyikan, tampilkan

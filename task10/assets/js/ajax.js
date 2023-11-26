@@ -21,12 +21,14 @@ const janji = new Promise((resolve, reject) => {
 })
 
 function html(item) {
-    return `<div class="testimonial">
-    <img src="${item.image}" class="profile-testimonial" />
-    <p class="quote">"${item.content}"</p>
-    <p class="author">- ${item.author}</p>
-    <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
-</div>`
+    return `<div class="card" style="width: 18rem; ">
+    <img src="${item.image}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text content text-start">${item.content}</p>
+      <p class="card-text author text-end">${item.author}</p>
+      <p class="card-text text-end">${item.rating} <i class="fa-solid fa-star"></i></p>
+    </div>
+  </div>`
 }
 
 async function allTestimonials() {
