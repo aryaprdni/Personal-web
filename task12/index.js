@@ -99,11 +99,13 @@ function updateProject(req, res) {
     console.log("Nama Project :", inputName)
     console.log("Nama Deskripsi:", inputDescription)
 
+    duration = calculateDuration(inputStart, inputEnd)
     data[parseInt(id)] = {
         inputName,
         inputDescription,
         inputStart,
-        inputEnd
+        inputEnd,
+        duration
     };
     
     res.redirect('/')
@@ -125,7 +127,7 @@ function detail (req, res) {
 
     if(id >= 0 && id < data.length) {
         const project = data[id]
-        res.render('detail', {data: project, start: project.inputStart, end: project.inputEnd})
+        res.render('detail-project', {data: project, start: project.inputStart, end: project.inputEnd})
     } else {
         res.status(404).send('Project not found!')
     }

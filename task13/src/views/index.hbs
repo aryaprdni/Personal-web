@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-        <title>Task 12</title>
+        <title>Task 13</title>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,21 +72,22 @@
         </div>
 
         <h1 style="text-align: center;" class="m-5">My Project</h1>
-        <div id="myProjectSection" class="container-fluid d-flex flex-wrap justify-content-center">
+        <div id="myProjectSection" class="container-fluid d-flex flex-wrap justify-content-center" style="box-sizing: border-box;">
             {{#each data}}
                 <div class="card p-3 m-3 col-12 col-md-6 shadow-sm " style="max-height: 450px; max-width: 400px; box-sizing: border-box;">
-                    <img src="../assets/image/1.jpg" class="card-img-top" alt="Project Image" style="height: 50%; width: 100%;">
+                    <img src="assets/image/{{this.image}}" class="card-img-top" alt="Project Image" style="height: 50%; width: 100%;">
                     <div class="card-body">
-                        <h4 class="card-title" style="margin-top: -10px;"><a href="/detail-project/{{@index}}" style="text-decoration:none;">{{this.inputName}}</a></h4>
-                        <div class="card-subtitle mb-4" style="font-size: 1em; color: #666;">Durasi : {{this.duration}}</div>
+                        <h4 class="card-title" style="margin-top: -10px;"><a href="/detail-project/{{@index}}" style="text-decoration:none;">{{this.name}}</a></h4>
+                        <div class="card-subtitle mb-4" style="font-size: 1em; color: #666;">Duration : {{this.duration}}</div>
                         <p class="card-content">
-                            {{this.inputDescription}}
+                            {{this.description}}
                         </p>
                         <div class="card-icon mb-3">
-                                <span class="me-2">{{{logos.nodeJs}}}</span>
-                                <span class="me-2">{{{logos.nextJs}}}</span>
-                                <span class="me-2"class="me-2">{{{logos.reactJs}}}</span>
-                                <span class="me-2">{{{logos.typeScript}}}</span>
+                                <div class="card-icon mb-3">
+                                    <div class="card-icon mb-3">
+                                        {{logos this.technologies}}
+                                    </div>
+                                </div>
                         </div>
                         <div class="text-center mt-3">
                             <div class="d-flex justify-content-between" style="width: 100%;">
