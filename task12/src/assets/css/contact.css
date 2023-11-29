@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: #dce0e4;
   margin: 0;
@@ -40,4 +41,48 @@ body {
   .container-form {
     width: 100%; /* Adjust the width for small screens */
   }
+=======
+body {
+  background-color: #dce0e4;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #dce0e4;
+  margin-top: -100px;
+}
+
+.container-form {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.label-contact {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.input-contact {
+  margin-bottom: 20px;
+}
+
+.submit-contact {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container-form {
+    width: 100%; /* Adjust the width for small screens */
+  }
+>>>>>>> 931f070ce61a5ff0dea420844c0f815f3bb7a41d
 }

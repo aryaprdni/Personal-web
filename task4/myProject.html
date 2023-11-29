@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
     <head>
         <title>My Project</title>
@@ -86,4 +87,94 @@
     </div>
         <script src="assets/js/myProject.js"></script>
     </body>
+=======
+<html>
+    <head>
+        <title>My Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/myProject.css">
+        <!-- <link rel="stylesheet" href="myProject.css"> -->
+    </head>
+    <body>
+        <div class="container-navbar">
+            <div class="container-navbar2">
+                <nav>
+                <div>
+                    <ul>
+                        <li><img src="assets/image/dumbways.png" alt=""></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="myProject.html">My Project</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="contact.html" class="btn">Contact Me</a>
+                </div>
+        </nav>
+            
+        <form style="flex-direction: column;">
+            <div class="container">
+
+                <h1 class="h1" style="margin-bottom: 50px;">ADD MY PROJECT</h1>
+
+                <label class="text-label">Project name</label>
+                <input type="text" id="inputName" class="input" />
+
+                <div class="container_date">
+                  <section>
+                    <label class="text-label">Start Date</label>
+                    <input type="date" id="inputStart" class="input-start" />
+                  </section>
+                  <section>
+                    <label class="text-label">End Date</label>
+                    <input type="date" id="inputEnd" class="input-end" />
+                  </section>
+                </div>
+        
+                <div>
+                  <label style="font-weight: bold;">Description</label>
+                  <textarea id="message" class="text-area"></textarea>
+                </div>
+
+                <div>
+                    <div class="container-checkbox">
+                    <label class="text-label">Technologies</label>
+                    <div class="checkbox">
+                      <input type="checkbox" id="inputNodejs" style="margin-top: 15px; border-radius: 15px;">
+                      <label class="text-checkbox">Node Js</label>
+                      <input type="checkbox" id="inputNextjs" style="margin-left: 40px;">
+                      <label class="text-checkbox">Next Js</label>
+                    </div>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="inputReactjs" style="margin-bottom: 20px;">
+                    <label class="text-checkbox">React Js</label>
+                    <input type="checkbox" id="inputTypescript" style="margin-left: 38px;">
+                    <label class="text-checkbox">TypeScript</label>
+                </div>
+
+                <div class="input-blog-image-group">
+                    <label for="inputImage" class="custom-file-upload">
+                      <p class="text-label">Upload Image</p>
+                    </label>
+                    <input style="background-color: white;" type="file" id="inputImage" class="input-file" />
+                    <div id="preview"></div>
+                </div>
+
+                <div class="button-group">
+                    <input type="button" value="Submit" class="submit" onclick="submitData(event)" />
+                    </div>
+                  </div>
+            </div>
+        </form>
+
+    <h1 style="text-align: center; margin: 50px">My Project</h1>
+    <div id="myProjectSection" class="myProject" style="display: flex;">
+        
+    </div>
+        <script src="assets/js/myProject.js"></script>
+    </body>
+>>>>>>> 931f070ce61a5ff0dea420844c0f815f3bb7a41d
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -47,3 +48,54 @@ nav .btn {
     font-size: 18px;
     text-decoration: none;
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f3f3;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 70px;
+}
+
+nav ul li a {
+    font-size: 22px;
+}
+
+nav ul li img {
+    height: 50px;
+    width: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+>>>>>>> 931f070ce61a5ff0dea420844c0f815f3bb7a41d

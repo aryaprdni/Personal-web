@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   <html>
     <head>
       <title>My Project</title>
@@ -114,3 +115,121 @@
       <script src="../assets/js/nav.js"></script>
     </body>
   </html>
+=======
+  <html>
+    <head>
+      <title>My Project</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="../assets/css/addProject.css" />
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+              <div class="container-fluid">
+                  <a class="navbar-brand mx-5" href="/">
+                      <img src="../assets/image/dumbways.png" class="img-fluid ms-5" width="60" height="60" id="navbar-logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item ms-3">
+                              <a class="nav-link" id="home-link" href="/">Home</a>
+                          </li>
+                          <li class="nav-item ms-3">
+                              <a class="nav-link" id="add-project-link" href="/add-project">Add Project</a>
+                          </li>
+                          <li class="nav-item ms-3">
+                              <a class="nav-link" id="testimonial-link" href="/testimonials">Testimonial</a>
+                          </li>
+                      </ul>
+                      <button class="btn btn-outline-light bg-black text-ligh" id="btn-contactMe" type="submit"><a href="/contact" style="text-decoration: none; color: white;">Contact me</a></button>
+                  </div>
+              </div>
+          </nav>
+
+      <div class="container" style="width: 40%;">
+        <form method="post" action="/add-project" class="container">
+          <h1 class="text-center my-5">ADD MY PROJECT</h1>
+          <div class="mb-3">
+            <label for="inputTitle" class="form-label"><h4>Project name</h4></label>
+            <input type="text" class="form-control shadow p-3" id="inputName" name="inputName" />
+          </div>
+    
+          <div class="container_date d-flex mb-3">
+            <div class="d-flex flex-column" style="width: 40%;">
+              <label class="form-label"><h4>Start Date</h4></label>
+              <input type="date" id="inputStart" class="form-control shadow p-3" name="inputStart" />
+            </div>
+            <div class="d-flex flex-column" style="width: 40%;">
+              <label class="form-label"><h4>End Date</h4></label>
+              <input type="date" id="inputEnd" class="form-control shadow p-3" name="inputEnd"/>
+            </div>
+          </div>
+    
+          <div class="mb-3">
+            <label for="inputMessage" class="form-label" ><h4>Description</h4></label>
+            <textarea class="form-control shadow p-3" style="height: 100px" id="inputMessage" name="inputDescription"></textarea>
+          </div>
+    
+          <div class="row">
+            <div class="col-md-12">
+                <label class="form-label" id="technologies"><h4>Technologies</h4></label>
+                  <div class="d-flex mb-4">
+                    <div style="margin-right: 50px;">
+                      <div class="mb-2">
+                        <input type="checkbox" class="form-check-input shadow p-2" id="inputNodejs" name="nodeJs">
+                        <label class="form-check-label" for="inputNodejs" ><h5>Node Js</h5></label>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" class="form-check-input shadow p-2" id="inputNextjs" name="nextJs">
+                        <label class="form-check-label" for="inputNextjs" ><h5>Next Js</h5></label>
+                      </div>
+                    </div>
+                        
+                      <div>
+                        <div class="mb-2">
+                          <input type="checkbox" class="form-check-input shadow p-2" id="inputReactjs" name="reactJs">
+                          <label class="form-check-label" for="inputReactjs"><h5>React Js</h5></label>
+                        </div>
+        
+                        <div>
+                          <input type="checkbox" class="form-check-input shadow p-2" id="inputTypescript" name="typescript">
+                          <label class="form-check-label" for="inputTypescript"><h5>TypeScript</h5></label>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+      
+          </div>
+      
+
+          <div class="mb-3 mb-4">
+            <label for="inputImage" class="form-label"><h4>Upload image</h4></label>
+            <input type="file" class="form-control shadow p-3" id="inputImage" />
+          </div>
+
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-dark px-4" onclick="submitData(event)">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      
+
+      <script src="../assets/js/bootstrap.bundle.min.js"></script>
+      {{!-- <script src="../addProject.js"></script> --}}
+      <script src="../assets/js/nav.js"></script>
+    </body>
+  </html>
+>>>>>>> 931f070ce61a5ff0dea420844c0f815f3bb7a41d
