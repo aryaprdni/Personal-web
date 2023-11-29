@@ -1,0 +1,72 @@
+  <html>
+    <head>
+      <title>My Project</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="../assets/css/addProject.css" />
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+              <div class="container-fluid">
+                  <a class="navbar-brand mx-5" href="/">
+                      <img src="../assets/image/dumbways.png" class="img-fluid ms-5" width="60" height="60" id="navbar-logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item ms-3">
+                              <a class="nav-link" id="home-link" href="/">Home</a>
+                          </li>
+                          <li class="nav-item ms-3">
+                              <a class="nav-link" id="add-project-link" href="/add-project">Add Project</a>
+                          </li>
+                          <li class="nav-item ms-3">
+                              <a class="nav-link" id="testimonial-link" href="/testimonials">Testimonial</a>
+                          </li>
+                      </ul>
+                      <button class="btn btn-outline-light bg-black text-ligh" id="btn-contactMe" type="submit"><a href="/contact" style="text-decoration: none; color: white;">Contact me</a></button>
+                  </div>
+              </div>
+          </nav>
+
+      <div class="container" style="width: 40%;">
+        <form method="post" action="/register" class="container">
+          <h2 class="text-center my-5">REGISTER YOUR ACCOUNT</h2>
+          <div class="mb-3">
+            <label for="inputTitle" class="form-label"><h4>Name</h4></label>
+            <input type="text" class="form-control shadow p-3" id="inputName" name="inputName" />
+          </div>
+
+          <div class="mb-3">
+            <label for="inputTitle" class="form-label"><h4>Email</h4></label>
+            <input type="email" class="form-control shadow p-3" id="inputEmail" name="inputEmail" />
+          </div>
+
+          <div class="mb-3">
+            <label for="inputTitle" class="form-label"><h4>Password</h4></label>
+            <input type="password" class="form-control shadow p-3" id="inputPassword" name="inputPassword" />
+          </div>
+    
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-dark px-4" onclick="submitData(event)">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      
+
+      <script src="../assets/js/bootstrap.bundle.min.js"></script>
+      {{!-- <script src="../addProject.js"></script> --}}
+      <script src="../assets/js/nav.js"></script>
+    </body>
+  </html>
